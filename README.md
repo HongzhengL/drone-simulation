@@ -156,14 +156,14 @@ In our project, we had strengths in communication, time-management, and adaptabi
 
 [Video Presentation](https://youtu.be/a7HkonZaUc8)
 
-[Presentation Slides](./pdf/CSCI_3081W_Final_Project.pdf)
+[Presentation Slides](./CSCI_3081W_Final_Project.pdf)
 
 ---
 
 ## UML
 
 ### Battery Packs UML
-![Battery Packs UML](./png/BatteryPacks.png)
+![Battery Packs UML](./BatteryPacks.png)
 
 ### Double Delivery UML
-![Double Delivery UML](./png/DoubleDelivery.png)
+![Double Delivery UML](./DoubleDelivery.png)
