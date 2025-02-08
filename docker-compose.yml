@@ -1,0 +1,9 @@
+services:
+  drone_simulation:
+    image: hongzhengli/final_project:latest
+    container_name: drone_simulation
+    restart: always
+    ports:
+      - "${PORT:-40081}:8081"
+
+

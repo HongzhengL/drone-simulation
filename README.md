@@ -4,6 +4,24 @@
 
 ## Write up
 
+### Deployment Guide
+
+We recommend using `docker compse` to deploy.
+
+```bash
+git clone https://github.com/HongzhengL/drone-simulation.git
+cd drone-simulation
+docker compose up -d
+```
+
+By default, the service runs on port 40081. To specify a different port,
+set the `PORT` environment variable before running the `docker compose`
+command:
+
+```bash
+PORT=<CUSTOM_PORT> docker compose up -d
+```
+
 ### Team number, member names, and x500s.
 
 - Team-010-38
