@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOPHER Delivery Simulation System</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <div id="delivery-popup" hidden="true">
+        <h2>Your delivery is scheduled!</h2>
+    </div>
+    <div id="additional-delivery-popup" hidden="true">
+        <h2>Would you like to pickup an extra package?</h2>
+        <div id="additional-delivery-options">
+            <button id="additional-delivery-yes">Yes</button>
+            <button id="additional-delivery-no">No</button>
+        </div>
+    </div>
+    <div id="notification-bar">
+        <ul id="notification-list">
+        </ul>
+    </div>
+    <div id="menu">
+        <div>Change View:<br> <select title="Entity Select" id="entity-select">
+                <option value="-1">Select entity...</option>
+            </select></div>
+        <div><br>Simulation Speed:<br> <input title="Speed Slider" type="range" min="1" max="100" value="10"
+                class="slider" id="sim-speed">
+        </div>
+        <div>
+            <br><input title="Show Routes" id="show-routes" type="checkbox"> Show All Routes</input>
+            <div>
+                <button type="button" id="schedule-button">Schedule Trip</button>
+                <div id="schedule-input" hidden="true">
+                    <div>Name: <input id="schedule-name" type="Text" autocomplete="off"></div>
+                    <div>Search Strategy:
+                        <select id="search-strategy">
+                            <option value="astar">Astar</option>
+                            <option value="bfs">BFS</option>
+                            <option value="dfs">DFS</option>
+                            <option value="dijkstra">Dijkstra</option>
+                        </select>
+                    </div>
+                    <br><button id="schedule-submit">Submit</button>
+                    <button id="schedule-cancel">Cancel</button><br>
+                    <div id="schedule-error"></div>
+                </div>
+                <div>
+                    <button type="button" id="add-human">Add Human</button><br>
+                    <button type="button" id="add-drone">Add Drone</button><br>
+                    <button type="button" id="stop-simulation">Stop Simulation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New notification about refreshing the page -->
+    <div id="scene-loading-notification"
+        style="text-align: center; padding: 10px; background-color: #ffcc00; font-weight: bold;">
+        ⚠️ If the scene is frozen or not loading, please try refreshing the page.
+    </div>
+
+    <div id="scene-container"></div>
+    <!-- Include the "main" graphics script and run it. -->
+    <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+[
+  {
+    "command": "SetScene",
+    "params": {
+      "type": "scene",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "mesh": "assets/model/umn.obj",
+      "texture": "assets/texture/umn.png",
+      "groundTexture": "assets/texture/umn.png-ground.png",
+      "color": "#cccccc",
+      "position": [-1.5, -13, -1.5],
+      "scale": [0.05, 0.05, 0.05]
+    }
+  },
+  {
+    "command": "AddMesh",
+    "params": {
+      "type": "route",
+      "mesh": "assets/model/routes.obj",
+      "position": [-0.0, -12.8, -0.0],
+      "scale": [0.0705, 0.05, 0.0705],
+      "color": "#ff00e1"
+    }
+  },
+  {
+    "command": "SetGraph",
+    "params": {
+      "filePath": "web/public/assets/model/routes.obj"
+    }
+  },
+  {
+    "command": "CreateEntity",
+    "params": {
+      "type": "human",
+      "name": "Human-OG",
+      "mesh": "assets/model/human.glb",
+      "position": [498.292, 270, -228.623],
+      "scale": [0.005, 0.005, 0.005],
+      "rotation": [0, 0, 0, 0],
+      "direction": [1, 0, 0],
+      "speed": 10.0,
+      "radius": 1.0,
+      "start": 2.0,
+      "duration": 2.0,
+      "offset": [0, -0.5, 0]
+    }
+  },
+  {
+    "command": "CreateEntity",
+    "params": {
+      "type": "helicopter",
+      "name": "Helicopter",
+      "mesh": "assets/model/helicopter.glb",
+      "position": [498.292, 550, -228.623],
+      "scale": [0.025, 0.025, 0.025],
+      "rotation": [0, 0, 0, 0],
+      "direction": [1, 0, 0],
+      "speed": 50.0,
+      "offset": [0, 1.5, 0]
+    }
+  },
+  {
+    "command": "CreateEntity",
+    "params": {
+      "type": "drone",
+      "name": "Drone",
+      "mesh": "assets/model/drone.glb",
+      "position": [498.292, 270, -228.623],
+      "scale": [0.1, 0.1, 0.1],
+      "rotation": [0, 0, 0, 0],
+      "direction": [1, 0, 0],
+      "speed": 30.0,
+      "radius": 1.0,
+      "start": 2.0,
+      "duration": 2.0,
+      "offset": [0, 0.6, 0]
+    }
+  },
+    {
+    "command": "CreateEntity",
+    "params": {
+      "type": "recharge_station",
+      "name": "Centeral-Recharge-Station",
+      "mesh": "assets/model/battery.glb",
+      "position": [498.292, 240, -228.623],
+      "scale": [0.5, 0.5, 0.5],
+      "rotation": [0, 0, 0, 0],
+      "direction": [1, 0, 0],
+      "speed": 50.0,
+      "offset": [0, 1.5, 0]
+    }
+  },
+  {
+    "command": "CreateEntity",
+    "params": {
+      "type": "recharge_station",
+      "name": "West-Bank-Recharge-Station-1",
+      "mesh": "assets/model/battery.glb",
+      "position": [-1106,240,759],
+      "scale": [0.5, 0.5, 0.5],
+      "rotation": [0, 0, 0, 0],
+      "direction": [1, 0, 0],
+      "speed": 50.0,
+      "offset": [0, 1.5, 0]
+    }
+  },
+  {
+    "command": "CreateEntity",
+    "params": {
+      "type": "recharge_station",
+      "name": "West-Bank-Recharge-Station-2",
+      "mesh": "assets/model/battery.glb",
+      "position": [-1034,240,-464],
+      "scale": [0.5, 0.5, 0.5],
+      "rotation": [0, 0, 0, 0],
+      "direction": [1, 0, 0],
+      "speed": 50.0,
+      "offset": [0, 1.5, 0]
+    }
+  },
+  {
+    "command": "CreateEntity",
+    "params": {
+      "type": "recharge_drone",
+      "name": "Centeral-Recharge-Drone",
+      "mesh": "assets/model/red_drone.glb",
+      "position": [498.292, 270, -228.623],
+      "scale": [0.1, 0.1, 0.1],
+      "rotation": [0, 0, 0, 0],
+      "direction": [1, 0, 0],
+      "speed": 50.0,
+      "offset": [0, 1.5, 0]
+    }
+  },
+  {
+    "command": "CreateEntity",
+    "params": {
+      "type": "recharge_drone",
+      "name": "West-Bank-Recharge-Drone-1",
+      "mesh": "assets/model/red_drone.glb",
+      "position": [-1106,270,759],
+      "scale": [0.1, 0.1, 0.1],
+      "rotation": [0, 0, 0, 0],
+      "direction": [1, 0, 0],
+      "speed": 50.0,
+      "offset": [0, 1.5, 0]
+    }
+  },
+  {
+    "command": "CreateEntity",
+    "params": {
+      "type": "recharge_drone",
+      "name": "West-Bank-Recharge-Drone-2",
+      "mesh": "assets/model/red_drone.glb",
+      "position": [-1034,270,-464],
+      "scale": [0.1, 0.1, 0.1],
+      "rotation": [0, 0, 0, 0],
+      "direction": [1, 0, 0],
+      "speed": 50.0,
+      "offset": [0, 1.5, 0]
+    }
+  },
+    {
+    "command": "CreateEntity",
+    "params": {
+       "type": "POI",
+       "name": "Gopher Pro Shop",
+       "mesh": "assets/model/balloon.glb",
+       "position": [698.292, 270, -388.623],
+       "scale": [0.012,0.012,0.012],
+       "rotation": [0, 0, 0, 0],
+       "direction": [1,0,0],
+       "speed": 50.0,
+       "offset": [0, 1.5, 0]
+    }
+ },
+ {
+  "command": "CreateEntity",
+  "params": {
+     "type": "POI",
+     "name": "Gopher Bookstore",
+     "mesh": "assets/model/balloon.glb",
+     "position": [-146.3, 270, 49.5],
+     "scale": [0.012,0.012,0.012],
+     "rotation": [0, 0, 0, 0],
+     "direction": [1,0,0],
+     "speed": 50.0,
+     "offset": [0, 1.5, 0]
+  }
+  },
+  {
+    "command": "CreateEntity",
+    "params": {
+       "type": "POI",
+       "name": "Subway",
+       "mesh": "assets/model/balloon.glb",
+       "position": [-670, 270, 166],
+       "scale": [0.012,0.012,0.012],
+       "rotation": [0, 0, 0, 0],
+       "direction": [1,0,0],
+       "speed": 50.0,
+       "offset": [0, 1.5, 0]
+  }
+  },
+  {
+    "command": "CreateEntity",
+    "params": {
+        "type": "POI",
+        "name": "Canes",
+        "mesh": "assets/model/balloon.glb",
+        "position": [-97.017622198622036,270,-720.14651702536185],
+        "scale": [0.012,0.012,0.012],
+        "rotation": [0, 0, 0, 0],
+        "direction": [1,0,0],
+        "speed": 50.0,
+        "offset": [0, 1.5, 0]
+  }
+  },
+  {
+    "command": "CreateEntity",
+    "params": {
+        "type": "POI",
+        "name": "Pioneer Dining Hall",
+        "mesh": "assets/model/balloon.glb",
+        "position": [387.4,270,128.9],
+        "scale": [0.012,0.012,0.012],
+        "rotation": [0, 0, 0, 0],
+        "direction": [1,0,0],
+        "speed": 50.0,
+        "offset": [0, 1.5, 0]
+    }
+   }
+]

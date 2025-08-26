@@ -1,0 +1,10 @@
+BasedOnStyle: Google
+DerivePointerAlignment: false
+PointerAlignment: Right
+ColumnLimit: 120
+IncludeBlocks: Preserve
+
+IndentWidth: 4
+TabWidth: 4
+UseTab: ForIndentation
+AllowShortFunctionsOnASingleLine: None
