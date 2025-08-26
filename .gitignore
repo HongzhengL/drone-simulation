@@ -34,3 +34,5 @@ docs/html
 docs/latex
 
 .vscode
+
+compile_commands.json
